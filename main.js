@@ -7,6 +7,8 @@ form.addEventListener('submit', function(e){
     const mensagemFracasso = `Que pena, você errou, ${segundoNumero.value} é menor que ${primeiroNumero.value}, o formulário está inválido, tente de novo`;
     if (primeiroNumero.value <= segundoNumero.value){
         alert(mensagemSucesso);
+        primeiroNumero.value = ' ';
+        segundoNumero.value = ' ';
     }else{
         alert(mensagemFracasso);
         primeiroNumero.value = ' ';
