@@ -11,5 +11,7 @@ form.addEventListener('submit', function(e){
         segundoNumero.value = ' ';
     }else{
         alert(mensagemFracasso);
+        primeiroNumero.value = ' ';
+        segundoNumero.value = ' ';
     }
 })
